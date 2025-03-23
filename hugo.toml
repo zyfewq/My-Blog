@@ -1,0 +1,154 @@
+# 站点设置
+baseURL = "https://example.org/"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+title = "我的炫酷博客"
+theme = "hugo-theme-stack"
+paginate = 5
+disablePathToLower = true
+enableGitInfo = true
+summaryLength = 150
+
+# 语言设置
+[languages.zh-cn]
+weight = 1
+languageName = "简体中文"
+
+[languages.zh-cn.params]  
+description = "一个充满创意和技术的个人空间"
+
+# 主题参数
+[params]
+mainSections = ["posts"]
+featuredImageField = "image"
+rssFullContent = true
+favicon = "favicon.png"
+
+[params.footer]
+since = 2025
+customText = "探索、创新、分享"
+
+[params.dateFormat]
+published = "2006-01-02"
+lastUpdated = "2006-01-02 15:04 MST"
+
+[params.sidebar]
+emoji = "🚀"
+subtitle = "探索技术的无限可能"
+
+[params.sidebar.avatar]
+enabled = true
+local = true
+src = "img/avatar.png"
+
+[params.article]
+math = true
+toc = true
+readingTime = true
+
+[params.article.license]
+enabled = true
+default = "Licensed under CC BY-NC-SA 4.0"
+
+[params.comments]
+enabled = true
+provider = "disqus"
+
+[params.comments.disqusjs]
+shortname = "my-blog"
+apiUrl = "https://disqus.com/api/"
+apiKey = ""
+admin = ""
+adminLabel = ""
+
+[params.widgets]
+enabled = ["search", "archives", "tag-cloud"]
+
+[params.widgets.archives]
+limit = 5
+path = "archives"
+
+[params.widgets.tagCloud]
+limit = 20
+
+[params.opengraph.twitter]
+site = ""
+card = "summary_large_image"
+
+[params.defaultImage.opengraph]
+enabled = true
+local = true
+src = "img/og-image.png"
+
+# 菜单配置
+[[menu.main]]
+identifier = "home"
+name = "首页"
+url = "/"
+weight = 10
+[menu.main.params]
+icon = "home"
+
+[[menu.main]]
+identifier = "about"
+name = "关于"
+url = "/about/"
+weight = 20
+[menu.main.params]
+icon = "user"
+
+[[menu.main]]
+identifier = "archives"
+name = "归档"
+url = "/archives/"
+weight = 30
+[menu.main.params]
+icon = "archives"
+
+[[menu.main]]
+identifier = "search"
+name = "搜索"
+url = "/search/"
+weight = 40
+[menu.main.params]
+icon = "search"
+
+# 社交链接
+[[menu.social]]
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/username"
+weight = 10
+[menu.social.params]
+icon = "brand-github"
+
+[[menu.social]]
+identifier = "twitter"
+name = "Twitter"
+url = "https://twitter.com/username"
+weight = 20
+[menu.social.params]
+icon = "brand-twitter"
+
+[[menu.social]]
+identifier = "linkedin"
+name = "LinkedIn"
+url = "https://linkedin.com/in/username"
+weight = 30
+[menu.social.params]
+icon = "brand-linkedin"
+
+# 分类法
+[taxonomies]
+tag = "tags"
+category = "categories"
+series = "series"
+
+# Markdown 渲染
+[markup]
+[markup.highlight]
+noClasses = false
+lineNos = true
+
+[markup.goldmark.renderer]
+unsafe = true
