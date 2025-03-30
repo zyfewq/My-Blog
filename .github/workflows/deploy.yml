@@ -41,9 +41,11 @@ jobs:
           ls -la
           echo "Hugo version:"
           hugo version
+          echo "Config file contents:"
+          cat hugo.yaml
 
       - name: Build with Hugo
-        run: hugo --minify --debug
+        run: hugo --minify --logLevel debug
 
       - name: Check build output
         run: |
