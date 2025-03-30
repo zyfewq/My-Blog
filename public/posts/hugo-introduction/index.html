@@ -10,7 +10,7 @@
 <meta property='og:description' content="Hugo 简介 Hugo 是一个用 Go 语言编写的静态网站生成器，以其构建速度快和灵活性而闻名。它可以在几秒钟内生成一个完整的网站，非常适合用于博客、文档网站或任何静态内容网站。 安装 Hugo 根据不同的操作系统，安装 Hugo 的方式也不同： macOS 1 brew install hugo Windows 1 choco install hugo -confirm Linux 1 sudo apt-get install hugo 创建新网站 1 2 hugo new site myblog cd myblog 安装主题 Hugo 有丰富的主题库，你可以在 Hugo 主题库 中找到适合你的主题。以下是安装 Ananke 主题的示例： 1 git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke 然后在 hugo.toml 配置文件中添加： 1 theme = &#39;ananke&#39; 创建内容 1 hugo new content posts/my-first-post.md 本地预览 1 hugo server -D 这将启动一个本地服务器，通常在 http://localhost:1313/ 可以访问。 构建网站 1 hugo 这将生成静态文件到 public 目录中，然后可以将其部署到任何静态文件服务器上。 常用配置 Hugo 的主要配置文件是 hugo.toml，以下是一些常用配置： 1 2 3 4 5 6 7 8 9 10 11 12 baseURL = &#39;https://example.org/&#39; languageCode = &#39;zh-cn&#39; title = &#39;我的博客&#39; theme = &#39;ananke&#39; [params] author = &#39;博主名称&#39; description = &#39;博客描述&#39; favicon = &#39;favicon.ico&#39; site_logo = &#39;images/logo.png&#39; background_color_class = &#39;bg-black&#39; recent_posts_number = 5 结论 Hugo 是一个强大而灵活的静态网站生成器，非常适合博客和文档网站的开发。它的高效、简单和灵活性使其成为很多开发者的首选工具。">
 <meta property='og:url' content='http://localhost:1313/posts/hugo-introduction/'>
 <meta property='og:site_name' content='我的炫酷博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Hugo' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='静态网站' /><meta property='article:published_time' content='2025-03-23T14:29:41&#43;08:00'/><meta property='article:modified_time' content='2025-03-23T14:29:41&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Hugo' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='静态网站' /><meta property='article:published_time' content='2025-03-23T14:29:41&#43;08:00'/><meta property='article:modified_time' content='2025-03-23T23:28:32&#43;08:00'/>
 <meta name="twitter:title" content="Hugo 的使用指南">
 <meta name="twitter:description" content="Hugo 简介 Hugo 是一个用 Go 语言编写的静态网站生成器，以其构建速度快和灵活性而闻名。它可以在几秒钟内生成一个完整的网站，非常适合用于博客、文档网站或任何静态内容网站。 安装 Hugo 根据不同的操作系统，安装 Hugo 的方式也不同： macOS 1 brew install hugo Windows 1 choco install hugo -confirm Linux 1 sudo apt-get install hugo 创建新网站 1 2 hugo new site myblog cd myblog 安装主题 Hugo 有丰富的主题库，你可以在 Hugo 主题库 中找到适合你的主题。以下是安装 Ananke 主题的示例： 1 git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke 然后在 hugo.toml 配置文件中添加： 1 theme = &#39;ananke&#39; 创建内容 1 hugo new content posts/my-first-post.md 本地预览 1 hugo server -D 这将启动一个本地服务器，通常在 http://localhost:1313/ 可以访问。 构建网站 1 hugo 这将生成静态文件到 public 目录中，然后可以将其部署到任何静态文件服务器上。 常用配置 Hugo 的主要配置文件是 hugo.toml，以下是一些常用配置： 1 2 3 4 5 6 7 8 9 10 11 12 baseURL = &#39;https://example.org/&#39; languageCode = &#39;zh-cn&#39; title = &#39;我的博客&#39; theme = &#39;ananke&#39; [params] author = &#39;博主名称&#39; description = &#39;博客描述&#39; favicon = &#39;favicon.ico&#39; site_logo = &#39;images/logo.png&#39; background_color_class = &#39;bg-black&#39; recent_posts_number = 5 结论 Hugo 是一个强大而灵活的静态网站生成器，非常适合博客和文档网站的开发。它的高效、简单和灵活性使其成为很多开发者的首选工具。">
     <link rel="shortcut icon" href="/favicon.png" />
@@ -88,10 +88,9 @@
                     >
                         
                         
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
 </svg>
 
 
@@ -109,10 +108,9 @@
                     >
                         
                         
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
 </svg>
 
 
@@ -130,13 +128,14 @@
                     >
                         
                         
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="4" y="4" width="16" height="16" rx="2" />
+  <line x1="8" y1="11" x2="8" y2="16" />
+  <line x1="8" y1="8" x2="8" y2="8.01" />
+  <line x1="12" y1="16" x2="12" y2="11" />
+  <path d="M16 16v-3a2 2 0 0 0 -4 0" />
 </svg>
-
-
 
                         
                     </a>
@@ -150,10 +149,16 @@
             <a href='/' >
                 
                 
-                    
                 
-                
-                    
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
                 
                 <span>首页</span>
             </a>
@@ -164,10 +169,15 @@
             <a href='/about/' >
                 
                 
-                    
                 
-                
-                    
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
                 
                 <span>关于</span>
             </a>
@@ -178,10 +188,16 @@
             <a href='/archives/' >
                 
                 
-                    
                 
-                
-                    
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
                 
                 <span>归档</span>
             </a>
@@ -192,10 +208,15 @@
             <a href='/search/' >
                 
                 
-                    
                 
-                
-                    
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
                 
                 <span>搜索</span>
             </a>
@@ -465,7 +486,19 @@
 
         <span>Licensed under CC BY-NC-SA 4.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 2025-03-23 23:28 CST
+        </span>
+    </section></footer>
 
 
     

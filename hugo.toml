@@ -1,5 +1,5 @@
 # 站点设置
-baseURL = "https://example.org/"
+baseURL = "https://zyfewq.github.io/My-Blog/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 title = "我的炫酷博客"
@@ -76,7 +76,7 @@ site = ""
 card = "summary_large_image"
 
 [params.defaultImage.opengraph]
-enabled = true
+enabled = false
 local = true
 src = "img/og-image.png"
 
