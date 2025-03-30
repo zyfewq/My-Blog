@@ -1,0 +1,145 @@
+baseurl: https://zyfewq.github.io/My-Blog/
+languageCode: zh-cn
+theme: hugo-theme-stack
+title: 我的炫酷博客
+pagination:
+  pagerSize: 5
+disablePathToLower: true
+enableGitInfo: true
+summaryLength: 150
+
+# 语言设置
+languages:
+  zh-cn:
+    weight: 1
+    languageName: 简体中文
+    params:
+      sidebar:
+        subtitle: 探索技术的无限可能
+
+# 主题参数
+params:
+  mainSections:
+    - posts
+  featuredImageField: image
+  rssFullContent: true
+  favicon: favicon.png
+
+  footer:
+    since: 2025
+    customText: 探索、创新、分享
+
+  dateFormat:
+    published: 2006-01-02
+    lastUpdated: 2006-01-02 15:04 MST
+
+  sidebar:
+    emoji: 🚀
+    subtitle: 探索技术的无限可能
+    avatar:
+      enabled: true
+      local: true
+      src: img/avatar.png
+
+  article:
+    math: true
+    toc: true
+    readingTime: true
+    license:
+      enabled: true
+      default: Licensed under CC BY-NC-SA 4.0
+
+  comments:
+    enabled: true
+    provider: disqus
+    disqusjs:
+      shortname: my-blog
+      apiUrl: https://disqus.com/api/
+      apiKey: ""
+      admin: ""
+      adminLabel: ""
+
+  widgets:
+    enabled:
+      - search
+      - archives
+      - tag-cloud
+    archives:
+      limit: 5
+      path: archives
+    tagCloud:
+      limit: 20
+
+  opengraph:
+    twitter:
+      site: ""
+      card: summary_large_image
+
+  defaultImage:
+    opengraph:
+      enabled: false
+      local: true
+      src: img/og-image.png
+
+# 菜单配置
+menu:
+  main:
+    - identifier: home
+      name: 首页
+      url: /
+      weight: 10
+      params:
+        icon: home
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 20
+      params:
+        icon: user
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 30
+      params:
+        icon: archives
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 40
+      params:
+        icon: search
+
+  social:
+    - identifier: github
+      name: GitHub
+      url: https://github.com/username
+      weight: 10
+      params:
+        icon: brand-github
+    - identifier: twitter
+      name: Twitter
+      url: https://twitter.com/username
+      weight: 20
+      params:
+        icon: brand-twitter
+    - identifier: linkedin
+      name: LinkedIn
+      url: https://linkedin.com/in/username
+      weight: 30
+      params:
+        icon: brand-linkedin
+
+# 分类法
+taxonomies:
+  tag: tags
+  category: categories
+  series: series
+
+# Markdown 渲染
+markup:
+  highlight:
+    noClasses: false
+    lineNos: true
+  goldmark:
+    renderer:
+      unsafe: true 
