@@ -4,7 +4,7 @@ languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 title = "我的炫酷博客"
 theme = "hugo-theme-stack"
-paginate = 5
+pagination = { pagerSize = 5 }
 disablePathToLower = true
 enableGitInfo = true
 summaryLength = 150
