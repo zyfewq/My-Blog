@@ -34,8 +34,21 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
+      - name: Debug Info
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Directory contents:"
+          ls -la
+          echo "Hugo version:"
+          hugo version
+
       - name: Build with Hugo
-        run: hugo --minify
+        run: hugo --minify --debug
+
+      - name: Check build output
+        run: |
+          echo "Checking public directory:"
+          ls -la public
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
